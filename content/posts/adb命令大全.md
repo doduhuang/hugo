@@ -1,13 +1,4 @@
----
-title: adb命令大全
-categories: # 分类
-	- Android # 只能由一个
-tags: # 标签
-	- adb # 能有多个
-	 # - hook一个标签一行
----
 
-###### 常规ADB命令
 
 ```sh
 //关闭adb
