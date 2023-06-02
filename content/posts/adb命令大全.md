@@ -1,4 +1,10 @@
+---
+title: 'ADB命令大全'
+date: 2023-06-02T17:18:05+01:00
+draft: false
+---
 
+# ADB命令大全
 
 ```sh
 //关闭adb
