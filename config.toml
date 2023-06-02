@@ -1,32 +1,32 @@
-title = "小猪的博客"
-baseURL = "https://blog.xiaozhu0315.top"
+baseurl = "/"
+title = "小猪的笔记"
 languageCode = "zh-cn"
-theme = "ananke"
+paginate = "10" # Number of posts per page
+theme = "mainroad"
+disqusShortname = "" # Enable comments by entering your Disqus shortname
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
-MetaDataFormat = "yaml"
-DefaultContentLanguage = "cn"
-SectionPagesMenu = "main"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
-googleAnalytics = ""
-enableRobotsTXT = true
 
-[sitemap]
-  changefreq = "monthly"
-  priority = 0.5
-  filename = "sitemap.xml"
+[Params]
+  searchEnabled = true
+  description = "记录笔记" # Description of your site
+  opengraph = true    #是否启用 Open Graph 标签。
+  readmore = false # 是否在文章列表中显示“阅读更多”按钮。
+  authorbox = false #是否在文章页面中显示作者信息框。
+  pager = true #是否启用翻页功能。
+  post_meta = ["date", "categories"] # 文章元数据的显示顺序
+  mainSections = ["post", "docs"] #主要文章分类。
+ 
+[Params.logo] # 网站 Logo 相关设置。
+  subtitle = "个人博客" # Logo subtitle
 
-[params]
-  favicon = ""
-  description = "The last theme you'll ever need. Maybe."
-  facebook = ""
-  twitter = "https://twitter.com/GoHugoIO"
-  instagram = ""
-  youtube = ""
-  github = ""
-  gitlab = ""
-  linkedin = ""
-  mastodon = ""
-  # choose a background color from any on this page: http://tachyons.io/docs/themes/skins/ and preface it with "bg-"
-  background_color_class = "bg-black"
-  featured_image = "/images/gohugo-default-sample-hero-image.jpg"
-  recent_posts_number = 2
+[Params.sidebar] #侧边栏相关设置。
+  home = "right"   #  首页侧边栏布局
+  list = "right"   # 列表页侧边栏布局
+  single = "right" # 单篇文章页侧边栏布局。
+  # 侧边栏小工具的显示顺序。
+  widgets = ["search", "recent", "categories", "taglist"]
+
+[Params.widgets] #侧边栏小工具相关设置。
+  recent_num = 5 # 最近文章小工具中显示的文章数量
+  tags_counter = true # 是否在标签列表小工具中显示每个标签对应的文章数量。
