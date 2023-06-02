@@ -1,8 +1,7 @@
 title = "小猪的博客"
 baseURL = "https://blog.xiaozhu0315.top"
 languageCode = "zh-cn"
-theme = "gohugo-theme-ananke"
-themesDir = "../.."
+theme = "ananke"
 
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "cn"
