@@ -1,19 +1,27 @@
 ---
 title: 'Android13源码编译'
 lead: 记录wsl2 ubuntu2204 通过 docker 编译安卓13源码
-date: 2023-11-29T07:45:05+01:00
+date: 2023-11-29
 tags:
   - "源码编译"
 categories:
   - "源码编译"
 sidebar: true #这个标签表示是否在文章页面显示侧边栏。在这个例子中，我们将其设置为 false，因为我们不想在这篇文章的页面上显示侧边栏。如果您想要在文章页面上显示侧边栏，您可以将其设置为 true。
 
-pager: false #这个标签表示是否在文章列表页面上显示分页器。在这个例子中，我们将其设置为 false，因为我们不需要在文章列表页面上显示分页器。如果您有很多文章，并且想要将它们分成多个页面显示，您可以将其设置为 true。
+pager: true #这个标签表示是否在文章列表页面上显示分页器。在这个例子中，我们将其设置为 false，因为我们不需要在文章列表页面上显示分页器。如果您有很多文章，并且想要将它们分成多个页面显示，您可以将其设置为 true。
 
 weight: 1 #这个标签表示文章的权重。在 Hugo 中，权重决定了文章在列表中的排序顺序。如果您想要某篇文章排在列表的前面，您可以将其权重设置为更高的数字。在这个例子中，我们将其设置为 1，表示这篇文章应该排在列表的第一位。
 
 menu: 源码编译 #这个标签表示文章所属的菜单。在 Hugo 中，您可以通过定义不同的菜单来组织您的网站导航。在这个例子中，我们将这篇文章添加到名为 "main" 的菜单中。如果您想要将文章添加到其他菜单中，您可以将其设置为相应的菜在
+#thumbnail: "img/placeholder.png" # 缩略图
+toc: true # Enable Table of Contents for specific page
+mathjax: true # Enable MathJax for specific page
+sidebar: "right" # Enable sidebar (on the right side) per page
+widgets: # Enable sidebar widgets in given order per page
+  - "post_toc"
 ---
+
+
 
 
 

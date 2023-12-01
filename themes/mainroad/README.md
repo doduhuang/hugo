@@ -87,7 +87,6 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   # DEPRECATED PARAMS
   subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
   highlightColor = "" # Deprecated in favor of .Site.Params.style.vars.highlightColor
-
 [Params.style.vars]
   highlightColor = "#e22d30" # Override highlight color
 
@@ -174,10 +173,9 @@ menu: main # Optional, add page to a menu. Options: main, side, footer
 thumbnail: "img/placeholder.png" # Thumbnail image
 lead: "Example lead - highlighted near the title" # Lead text
 comments: false # Enable Disqus comments for specific page
-authorbox: true # Enable authorbox for specific page
+#authorbox: true # Enable authorbox for specific page
 pager: true # Enable pager navigation (prev/next) for specific page
 toc: true # Enable Table of Contents for specific page
-mathjax: true # Enable MathJax for specific page
 sidebar: "right" # Enable sidebar (on the right side) per page
 widgets: # Enable sidebar widgets in given order per page
   - "search"

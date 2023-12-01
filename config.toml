@@ -3,19 +3,22 @@ title = "小猪的笔记"
 languageCode = "zh-cn"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
-disqusShortname = "" # Enable comments by entering your Disqus shortname
-googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+disqusShortname = "" # Disqus 评论系统的 shortname，用于启用评论功能。
+googleAnalytics = "" # 谷歌分析跟踪 ID，用于启用谷歌分析功能。
 
 [taxonomies]
-tag = "tags"
-series = "series"
-category = "categories"
+  tag = "tags"
+  series = "series"
+  category = "categories"
 
 [Params]
-  searchEnabled = true
+ 
+  toc = true # Enable Table of Contents
+  schema = true # Enable Schema
+  searchEnabled = false
   description = "记录笔记" # Description of your site
-  opengraph = true    #是否启用 Open Graph 标签。
-  readmore = false # 是否在文章列表中显示“阅读更多”按钮。
+  opengraph = false    #是否启用 Open Graph 标签。
+  readmore = true # 是否在文章列表中显示“阅读更多”按钮。
   authorbox = false #是否在文章页面中显示作者信息框。
   pager = true #是否启用翻页功能。
   post_meta = ["date", "categories"] # 文章元数据的显示顺序
@@ -26,10 +29,10 @@ category = "categories"
 
 [Params.sidebar] #侧边栏相关设置。
   home = "right"   #  首页侧边栏布局
-  list = "right"   # 列表页侧边栏布局
-  single = "right" # 单篇文章页侧边栏布局。
+  list = "left"   # 列表页侧边栏布局
+  single = "right"   # 单篇文章页侧边栏布局。
   # 侧边栏小工具的显示顺序。
-  widgets = ["search", "recent", "categories", "taglist"]
+  widgets = ["recent", "categories", "taglist","social"]
 
 [Params.widgets] #侧边栏小工具相关设置。
   recent_num = 5 # 最近文章小工具中显示的文章数量
