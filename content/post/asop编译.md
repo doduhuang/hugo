@@ -220,6 +220,14 @@ emulator -list-avds ## 查看创建的名字
 
 
 
+### 源码导入AndroidStudio中
+
+mmm development/tools/idegen    ## 执行会在 out/host/linux-x86/framework/目录下生成idegen.jar文件
+
+development/tools/idegen/idegen.sh  ## 源码根目录会生成android.iml和android.ipr两个工程配置文件
+
+
+
 ### 错误 ninja failed with: signal: killed 
 
 > 需要添加swapfile交换空间
@@ -245,13 +253,3 @@ emulator -list-avds ## 查看创建的名字
 > **/swapfile none swap sw 0 0**
 >
 > 验证交换空间：再次运行 sudo swapon --show 命令，确认交换空间已成功启用。
-
-
-
-### 源码导入AndroidStudio中
-
-mmm development/tools/idegen    ## 源码根目录执行会在 out/host/linux-x86/framework/目录下生成idegen.jar文件
-
-
-
-development/tools/idegen/idegen.sh  ## 源码根目录会生成android.iml和android.ipr两个工程配置文件
