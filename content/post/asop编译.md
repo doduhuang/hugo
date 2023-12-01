@@ -213,5 +213,45 @@ make emu_img_zip
 ```bash
 emulator -avd Pixel_5_WSL -sysdir D:\Downloads\sdk-repo-linux-system-images-eng.devnn\x86_64 -dns-server 8.8.8.8,114.114.114.114 -verbose
 
+## 需要先用android studio 创建一个名为 Pixel_5_WSL的模拟器，才可以启动成功
+emulator -list-avds ## 查看创建的名字
 ##上面这个emulator命令是android sdk的tools目录下的。已将tools目录添到环境变量path中。
 ```
+
+
+
+### 错误 ninja failed with: signal: killed 
+
+> 需要添加swapfile交换空间
+>
+> 检查当前的交换空间状态：运行以下命令查看当前交换空间的情况：
+> **sudo swapon --show**
+>
+> 创建交换文件（如果没有交换空间）：运行以下命令以创建一个交换文件（通常以 swapfile 命名）：
+> **sudo fallocate -l <size> /swapfile**
+>
+> 其中 <size> 是您想要分配给交换空间的大小，例如 1G 表示 1 GB 的交换空间。
+>
+> 设置交换文件权限：运行以下命令以设置交换文件的权限：
+> **sudo chmod 600 /swapfile**
+>
+> 格式化交换文件：运行以下命令以格式化交换文件：
+> **sudo mkswap /swapfile**
+>
+> 启用交换空间：运行以下命令以启用交换空间：
+> **sudo swapon /swapfile**
+>
+> 更新 /etc/fstab 文件：打开 /etc/fstab 文件并添加以下行以在启动时自动挂载交换空间：
+> **/swapfile none swap sw 0 0**
+>
+> 验证交换空间：再次运行 sudo swapon --show 命令，确认交换空间已成功启用。
+
+
+
+### 源码导入AndroidStudio中
+
+mmm development/tools/idegen    ## 源码根目录执行会在 out/host/linux-x86/framework/目录下生成idegen.jar文件
+
+
+
+development/tools/idegen/idegen.sh  ## 源码根目录会生成android.iml和android.ipr两个工程配置文件
